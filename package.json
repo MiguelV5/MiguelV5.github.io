@@ -1,7 +1,8 @@
 {
 	"name": "portfolio",
 	"version": "0.0.1",
-	"private": true,
+	"homepage": "miguelv5.github.io",
+    "private": true,
 	"scripts": {
 		"dev": "vite dev",
 		"build": "vite build",
