@@ -20,7 +20,7 @@ jobs:
         uses: actions/cache@v3
         with:
           path: ./node_modules
-          key: ${{ runner.os }}-node-modules-${{ hashFiles('**/package-lock.json') }}
+          key: ${{ runner.os }}-node-modules-${{ hashFiles('**/pnpm-lock.yaml') }}
           restore-keys: |
             ${{ runner.os }}-node-modules-
 
@@ -29,14 +29,16 @@ jobs:
         with:
           node-version: 18
           cache: 'pnpm'
-        run: |
-          npm install -g pnpm
+        run: npm install -g pnpm
+        shell: bash
 
       - name: Install dependencies
         run: pnpm install
+        shell: bash
 
       - name: Build project
         run: pnpm run build
+        shell: bash
 
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
