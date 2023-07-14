@@ -2,8 +2,9 @@ name: Deploy node project to gh pages
 
 on:
   push:
-    branches:
-      - main
+    branches: ['main']
+
+  workflow_dispatch:
 
 permissions:
   contents: write
