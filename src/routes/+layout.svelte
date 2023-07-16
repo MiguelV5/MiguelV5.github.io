@@ -10,12 +10,20 @@
 
 	// ====================================================
 
-	import { AppShell } from '@skeletonlabs/skeleton';
+	import { AppShell, AppBar, Avatar } from '@skeletonlabs/skeleton';
+	import AppBarActions from '$lib/AppBarActions.svelte';
 </script>
 
 <AppShell>
 	<svelte:fragment slot="header">
-		<h1 class="h1">Header</h1>
+		<AppBar background="bg">
+			<svelte:fragment slot="lead">
+				<Avatar src="" width="w-14" rounded="rounded-full" />
+			</svelte:fragment>
+			<svelte:fragment slot="trail">
+				<AppBarActions />
+			</svelte:fragment>
+		</AppBar>
 	</svelte:fragment>
 
 	<slot />
