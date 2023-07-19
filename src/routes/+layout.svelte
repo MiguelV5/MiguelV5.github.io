@@ -12,13 +12,14 @@
 
 	import { AppShell, AppBar, Avatar } from '@skeletonlabs/skeleton';
 	import AppBarActions from '$lib/AppBarActions.svelte';
+	import Footer from '$lib/Footer.svelte';
 </script>
 
 <AppShell>
-	<svelte:fragment slot="header">
+	<svelte:fragment slot="pageHeader">
 		<AppBar background="bg">
 			<svelte:fragment slot="lead">
-				<Avatar src="" width="w-14" rounded="rounded-full" />
+				<Avatar src="../../avatar.png" width="w-14" rounded="rounded-full" />
 			</svelte:fragment>
 			<svelte:fragment slot="trail">
 				<AppBarActions />
@@ -28,7 +29,7 @@
 
 	<slot />
 
-	<svelte:fragment slot="footer">
-		<p>Footer</p>
+	<svelte:fragment slot="pageFooter">
+		<Footer />
 	</svelte:fragment>
 </AppShell>
