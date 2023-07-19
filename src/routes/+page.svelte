@@ -103,7 +103,6 @@
 		margin: 0 auto;
 		display: flex;
 		justify-content: space-between;
-		transition: transform 2s ease-in-out;
 	}
 
 	.bio-container {
@@ -111,20 +110,17 @@
 		flex-direction: column;
 		align-items: flex-start;
 		width: 60%;
-		transition: transform 2s ease-in-out;
 	}
 
 	.bio-text-container {
 		width: 100%;
 		max-width: 800px;
 		margin-bottom: 30px;
-		transition: transform 2s ease-in-out;
 	}
 	.bio-card-container {
 		width: 100%;
 		max-width: 400px;
 		margin-left: 40px;
-		transition: transform 2s ease-in-out;
 	}
 
 	@media screen and (max-width: 1180px) {
@@ -139,6 +135,9 @@
 
 		.bio-card-container {
 			width: 100%;
+			margin-right: auto;
+			margin-left: auto;
+			margin-bottom: 40px;
 		}
 	}
 
