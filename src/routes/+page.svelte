@@ -39,7 +39,7 @@
 				<span class="magic-text">Miguel Vasquez</span>.
 			</h1>
 			<h3 class="h3">
-				I am currently a studing at my <a
+				I am currently a studying at my <a
 					class="magic-text"
 					href="https://fi.uba.ar"
 					target="_blank"
@@ -50,8 +50,9 @@
 					target="_blank"
                     rel="noopener noreferrer">alma mater 🖤</a
 				>, where I completed my studies in Computer Science. -->
-				I possess a deep affection for this fascinating field in its entirety. I derive inmense satisfaction
-				from continuous learning and find great joy in imparting my knowledge to others.
+				<br />
+				I possess a deep affection for this fascinating field in its entirety, thus I acquire great satisfaction
+				by constantly learning on it, and find great joy in imparting my knowledge to others.
 			</h3>
 		</div>
 	</div>
