@@ -59,13 +59,4 @@
 	.card {
 		min-height: 500px;
 	}
-
-	@media screen and (max-width: 1180px) {
-		.bio-card-container {
-			width: 100%;
-			margin-right: auto;
-			margin-left: auto;
-			margin-bottom: 40px;
-		}
-	}
 </style>
