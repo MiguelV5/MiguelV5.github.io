@@ -41,7 +41,7 @@
 		margin-bottom: 30px;
 	}
 
-	@media screen and (max-width: 1180px) {
+	@media screen and (max-width: 1200px) {
 		.bio-container {
 			width: 100%;
 			align-items: center;

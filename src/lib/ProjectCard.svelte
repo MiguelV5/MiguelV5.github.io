@@ -54,7 +54,7 @@
 		max-width: 400px;
 		min-height: 600px;
 		max-height: 600px;
-		margin-left: 40px;
+		/* margin-left: 40px; */
 	}
 	.card {
 		min-height: 500px;

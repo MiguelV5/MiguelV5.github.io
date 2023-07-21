@@ -35,14 +35,14 @@
 
 <style>
 	.container {
-		max-width: 1150px;
+		max-width: 1200px;
 		align-items: center;
 		margin: 0 auto;
 		display: flex;
 		justify-content: space-between;
 	}
 
-	@media screen and (max-width: 1180px) {
+	@media screen and (max-width: 1200px) {
 		.container {
 			flex-direction: column;
 		}
