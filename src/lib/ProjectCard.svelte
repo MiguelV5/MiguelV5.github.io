@@ -1,5 +1,5 @@
 <script>
-	const BASE_PREVIEW_IMG_URL = '../../posts/';
+	const BASE_PREVIEW_IMG_URL = 'posts/';
 
 	const BASE_GH_URL = 'https://github.com/MiguelV5/';
 	const BASE_PAGES_URL = 'https://miguelv5.github.io/';

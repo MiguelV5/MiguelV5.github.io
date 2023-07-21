@@ -33,7 +33,7 @@
 		}
 	}}
 >
-	<img src="../../avatar.png" alt="M" />
+	<img src="avatar.png" alt="M" />
 </button>
 
 <AppBarSocials socials_class={innerSocialsClass} />
