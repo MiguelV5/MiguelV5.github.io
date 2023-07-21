@@ -8,20 +8,19 @@
 </script>
 
 <div class="bio-card-container space-y-6">
-	<img src="art-card2-nobg.png" alt="" />
+	<img src="art-card-nobg.png" alt="avatar-card" />
 </div>
 
 <style>
 	.bio-card-container {
 		display: flex;
-		/* flex-direction: column; */
 		justify-content: center;
 		align-items: center;
 		width: 100%;
 		border-radius: 0.5rem;
-		max-width: 280px;
-		min-height: 280px;
-		max-height: 280px;
+		max-width: 240px;
+		min-height: 240px;
+		max-height: 240px;
 		margin-left: 120px;
 		margin-right: auto;
 		overflow: hidden;
@@ -29,9 +28,12 @@
 
 	@media screen and (max-width: 1200px) {
 		.bio-card-container {
+			max-width: 192px;
+			min-height: 192px;
+			max-height: 192px;
 			margin-right: auto;
 			margin-left: auto;
-			margin-bottom: 40px;
+			margin-bottom: 50px;
 		}
 	}
 </style>
