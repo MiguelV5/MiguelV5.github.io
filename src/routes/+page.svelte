@@ -1,6 +1,7 @@
 <script>
 	import BioCard from '$lib/BioCard.svelte';
 	import BioText from '$lib/BioText.svelte';
+	import ProjectCards from '$lib/ProjectCards.svelte';
 	import { onMount, afterUpdate } from 'svelte';
 
 	let titleFontSize = 'text-6xl';
@@ -28,22 +29,36 @@
 </script>
 
 <div class="container h-full mx-auto">
-	<BioText {titleFontSize} />
+	<div class="first-row-container">
+		<BioText {titleFontSize} />
+		<BioCard />
+	</div>
 
-	<BioCard />
+	<ProjectCards />
 </div>
 
 <style>
 	.container {
 		max-width: 1200px;
-		align-items: center;
+		max-height: max-content;
 		margin: 0 auto;
 		display: flex;
+		flex-direction: column;
+		/* justify-content: center; */
+		align-items: center;
+	}
+
+	.first-row-container {
+		max-width: 1200px;
+		margin: 0 auto;
+		display: flex;
+		flex-direction: row;
 		justify-content: space-between;
+		align-items: center;
 	}
 
 	@media screen and (max-width: 1200px) {
-		.container {
+		.first-row-container {
 			flex-direction: column;
 		}
 	}
