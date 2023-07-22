@@ -42,6 +42,8 @@
 	.avatar {
 		width: 3.8rem;
 		height: 3.8rem;
+		min-width: 3.8rem;
+		min-height: 3.8rem;
 		border-radius: 100%;
 		border: 1px solid #323c5c;
 		overflow: hidden;
@@ -50,8 +52,25 @@
 	.avatar > img {
 		width: 3.5rem;
 		height: 3.5rem;
+		min-width: 3.5rem;
+		min-height: 3.5rem;
 		border-radius: 100%;
 		overflow: hidden;
+	}
+
+	@media screen and (max-width: 1200px) {
+		.avatar {
+			width: 3.3rem;
+			height: 3.3rem;
+			min-width: 3.3rem;
+			min-height: 3.3rem;
+		}
+		.avatar > img {
+			width: 3rem;
+			height: 3rem;
+			min-width: 3rem;
+			min-height: 3rem;
+		}
 	}
 
 	.avatar:hover {

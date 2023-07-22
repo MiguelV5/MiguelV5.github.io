@@ -19,7 +19,7 @@
 	// ====================================================
 </script>
 
-<AppShell>
+<!-- <AppShell>
 	<svelte:fragment slot="pageHeader">
 		<AppBar background="bg">
 			<svelte:fragment slot="lead">
@@ -43,18 +43,18 @@
 	<svelte:fragment slot="pageFooter">
 		<Footer />
 	</svelte:fragment>
-</AppShell>
+</AppShell> -->
 
-<!-- <div class="app-shell">
-	<header class="app-bar">
+<div class="app-shell">
+	<header class="app-bar variant-glass-surface">
 		<div class="app-bar-lead">
 			<InteractiveAvatar />
 		</div>
 		<div class="app-bar-trail">
 			<LightSwitch
 				bgLight="bg-surface-200"
-				height="h-8"
-				width="w-16"
+				height="h-7"
+				width="w-14"
 				ring="ring-[2px] ring-surface-300/20"
 			/>
 		</div>
@@ -69,11 +69,20 @@
 	</footer>
 </div>
 
+<!-- <style>
+	.page-content {
+		margin-top: 80px;
+		margin-bottom: 10px;
+		width: 100%;
+		height: 100%;
+	}
+</style> -->
+
 <style>
 	.app-shell {
 		display: flex;
 		flex-direction: column;
-		justify-content: center;
+		/* justify-content: center; */
 		align-items: center;
 		width: 100%;
 		height: 100%;
@@ -84,9 +93,12 @@
 		flex-direction: row;
 		justify-content: space-between;
 		align-items: center;
+		position: fixed;
+		top: 0;
 		width: 100%;
-		height: 100px;
-		padding: 0 20px;
+		height: 80px;
+		padding: 0 10px;
+		z-index: 100;
 	}
 
 	.app-bar-lead {
@@ -108,10 +120,21 @@
 	}
 
 	.page-content {
-		margin-top: 30px;
+		margin-top: 50px;
+		padding-top: 80px;
+		padding-bottom: 10px;
 		margin-bottom: 10px;
 		width: 100%;
 		height: 100%;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+
+	@media screen and (max-width: 1200px) {
+		.page-content {
+			margin-top: 20px;
+			padding-top: 120px;
+		}
 	}
 
 	.page-footer {
@@ -121,14 +144,5 @@
 		align-items: center;
 		width: 100%;
 		height: 100px;
-	}
-</style> -->
-
-<style>
-	.page-content {
-		margin-top: 80px;
-		margin-bottom: 10px;
-		width: 100%;
-		height: 100%;
 	}
 </style>

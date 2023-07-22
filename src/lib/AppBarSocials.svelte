@@ -44,14 +44,13 @@
 	.socials {
 		display: flex;
 		flex-direction: row;
-		justify-content: space-evenly;
 		margin-left: 4px;
 		margin-right: 4px;
 	}
 
 	.socials-enabled {
 		opacity: 1;
-		transform: translateX(20px);
+		transform: translateX(10px);
 		transition: transform 0.3s ease-in-out;
 	}
 
@@ -70,7 +69,7 @@
 		}
 		to {
 			opacity: 1;
-			transform: translateX(20px);
+			transform: translateX(10px);
 			visibility: visible;
 		}
 	}
@@ -78,7 +77,7 @@
 	@keyframes socials-disabling {
 		from {
 			opacity: 1;
-			transform: translateX(20px);
+			transform: translateX(10px);
 			visibility: visible;
 		}
 		to {
@@ -94,5 +93,12 @@
 
 	.socials-disabled {
 		animation: socials-disabling 0.3s ease-in-out;
+	}
+
+	@media screen and (max-width: 1200px) {
+		.socials {
+			margin-left: 2px;
+			margin-right: 2px;
+		}
 	}
 </style>
