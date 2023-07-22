@@ -11,7 +11,7 @@
 	href={GH_URL}
 	target="_blank"
 	rel="noopener noreferrer"
-	class="btn-icon btn-icon-lg variant-glass-surface socials {socials_class}"
+	class="btn-icon flexible-button-icon variant-glass-surface socials {socials_class}"
 >
 	<i class="fa-brands fa-github" />
 </a>
@@ -19,7 +19,7 @@
 	href={LINKEDIN_URL}
 	target="_blank"
 	rel="noopener noreferrer"
-	class="btn-icon btn-icon-lg variant-glass-surface socials {socials_class}"
+	class="btn-icon flexible-button-icon variant-glass-surface socials {socials_class}"
 >
 	<i class="fa-brands fa-linkedin" />
 </a>
@@ -27,7 +27,7 @@
 	href={SPOTIFY_URL}
 	target="_blank"
 	rel="noopener noreferrer"
-	class="btn-icon btn-icon-lg variant-glass-surface socials {socials_class}"
+	class="btn-icon flexible-button-icon variant-glass-surface socials {socials_class}"
 >
 	<i class="fa-brands fa-spotify" />
 </a>
@@ -35,7 +35,7 @@
 	href={MAILTO_URL}
 	target="_blank"
 	rel="noopener noreferrer"
-	class="btn-icon btn-icon-lg variant-glass-surface socials {socials_class}"
+	class="btn-icon flexible-button-icon variant-glass-surface socials {socials_class}"
 >
 	<i class="fa-solid fa-envelope" />
 </a>
@@ -45,7 +45,15 @@
 		display: flex;
 		flex-direction: row;
 		margin-left: 4px;
-		margin-right: 4px;
+		margin-right: 2px;
+		min-width: max-content;
+	}
+	.flexible-button-icon {
+		/* grabbed from btn-icon-lg */
+		aspect-ratio: 1 / 1;
+		width: 53px;
+		font-size: 1.125rem /* 18px */;
+		line-height: 1.75rem /* 28px */;
 	}
 
 	.socials-enabled {
@@ -98,7 +106,15 @@
 	@media screen and (max-width: 1200px) {
 		.socials {
 			margin-left: 2px;
-			margin-right: 2px;
+			margin-right: 1px;
+		}
+
+		.flexible-button-icon {
+			/* grabbed from btn-icon-base */
+			aspect-ratio: 1 / 1;
+			width: 43px;
+			font-size: 1rem /* 16px */;
+			line-height: 1.5rem /* 24px */;
 		}
 	}
 </style>

@@ -20,7 +20,7 @@
 </script>
 
 <div class="app-shell">
-	<header class="app-bar variant-glass-surface">
+	<header class="app-bar variant-glass">
 		<div class="app-bar-lead">
 			<InteractiveAvatar />
 		</div>
@@ -70,6 +70,7 @@
 		flex-direction: row;
 		justify-content: flex-start;
 		align-items: center;
+		margin-left: 10px;
 		width: 100%;
 		height: 100%;
 	}
@@ -98,6 +99,9 @@
 		.page-content {
 			margin-top: 20px;
 			padding-top: 120px;
+		}
+		.app-bar-lead {
+			margin-left: 2px;
 		}
 	}
 
