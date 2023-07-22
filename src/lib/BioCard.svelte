@@ -31,8 +31,8 @@
 		width: 100%;
 		border-radius: 0.5rem;
 		max-width: 240px;
-		min-height: 300px;
-		max-height: 300px;
+		min-height: 280px;
+		max-height: 280px;
 		margin-left: 120px;
 		margin-right: auto;
 		overflow: hidden;
@@ -61,7 +61,6 @@
 		.bio-card-container {
 			margin-left: auto;
 			margin-right: auto;
-			margin-bottom: 50px;
 		}
 
 		.bio-card-container > img {

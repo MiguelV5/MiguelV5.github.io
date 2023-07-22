@@ -28,8 +28,8 @@
 	afterUpdate(handleResize);
 </script>
 
-<div class="container h-full mx-auto">
-	<div class="first-row-container">
+<div class="page-content-container h-full mx-auto">
+	<div class="flexible-pseudo-row-container">
 		<BioText {titleFontSize} />
 		<BioCard />
 	</div>
@@ -38,7 +38,7 @@
 </div>
 
 <style>
-	.container {
+	.page-content-container {
 		max-width: 1200px;
 		max-height: max-content;
 		margin: 0 auto;
@@ -47,18 +47,20 @@
 		align-items: center;
 	}
 
-	.first-row-container {
+	.flexible-pseudo-row-container {
 		max-width: 1200px;
 		margin: 0 auto;
 		display: flex;
 		flex-direction: row;
 		justify-content: space-between;
 		align-items: center;
+		margin-bottom: 60px;
 	}
 
 	@media screen and (max-width: 1200px) {
-		.first-row-container {
+		.flexible-pseudo-row-container {
 			flex-direction: column;
+			margin-bottom: 0px;
 		}
 	}
 </style>
