@@ -11,7 +11,6 @@
 
 <style>
 	.footer-container {
-		/* position: absolute; */
 		bottom: 0px;
 		display: flex;
 		flex-direction: row;

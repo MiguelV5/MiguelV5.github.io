@@ -19,32 +19,6 @@
 	// ====================================================
 </script>
 
-<!-- <AppShell>
-	<svelte:fragment slot="pageHeader">
-		<AppBar background="bg">
-			<svelte:fragment slot="lead">
-				<InteractiveAvatar />
-			</svelte:fragment>
-			<svelte:fragment slot="trail">
-				<LightSwitch
-					bgLight="bg-surface-200"
-					height="h-8"
-					width="w-16"
-					ring="ring-[2px] ring-surface-300/20"
-				/>
-			</svelte:fragment>
-		</AppBar>
-	</svelte:fragment>
-
-	<main class="page-content">
-		<slot />
-	</main>
-
-	<svelte:fragment slot="pageFooter">
-		<Footer />
-	</svelte:fragment>
-</AppShell> -->
-
 <div class="app-shell">
 	<header class="app-bar variant-glass-surface">
 		<div class="app-bar-lead">
@@ -69,20 +43,10 @@
 	</footer>
 </div>
 
-<!-- <style>
-	.page-content {
-		margin-top: 80px;
-		margin-bottom: 10px;
-		width: 100%;
-		height: 100%;
-	}
-</style> -->
-
 <style>
 	.app-shell {
 		display: flex;
 		flex-direction: column;
-		/* justify-content: center; */
 		align-items: center;
 		width: 100%;
 		height: 100%;
