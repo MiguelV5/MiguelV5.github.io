@@ -20,24 +20,6 @@
 			previewImgUrl: BASE_PREVIEW_IMG_URL + 'ferris_torrent.png',
 			repoUrl: BASE_GH_URL + 'ferris_torrent',
 			hasWebpage: false
-		},
-		{
-			title: 'Test',
-			description:
-				'A relaxing static page with a polyrythmic effect, done simply with vanilla js, html and css.',
-			previewImgUrl: BASE_PREVIEW_IMG_URL + 'polyrythmic_circles.png',
-			repoUrl: BASE_GH_URL + 'polyrythmic_circles',
-			hasWebPage: true,
-			pageUrl: BASE_PAGES_URL + 'polyrythmic_circles'
-		},
-		{
-			title: 'Test',
-			description:
-				'A relaxing static page with a polyrythmic effect, done simply with vanilla js, html and css.',
-			previewImgUrl: BASE_PREVIEW_IMG_URL + 'polyrythmic_circles.png',
-			repoUrl: BASE_GH_URL + 'polyrythmic_circles',
-			hasWebPage: true,
-			pageUrl: BASE_PAGES_URL + 'polyrythmic_circles'
 		}
 	];
 
@@ -46,7 +28,7 @@
 
 <div class="external-project-cards-container space-y-6">
 	<hr class="opacity-100" />
-	<h2 class="h2 font-semibold flex justify-center items-center">Projects</h2>
+	<h2 class="h2 font-semibold text-4xl flex justify-center items-center">Projects</h2>
 
 	<div
 		class="inner-project-cards-container w-full text-token grid grid-rows-{gridRows} grid-cols-1 gap-4"
