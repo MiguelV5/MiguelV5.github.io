@@ -1,4 +1,6 @@
 <script>
+	export let triggerProjectButtonReductions = false;
+
 	const BASE_PREVIEW_IMG_URL = 'posts/';
 
 	const BASE_GH_URL = 'https://github.com/MiguelV5/';
@@ -42,7 +44,7 @@
 					<img src={project.previewImgUrl} class="bg-black/50" alt="Post" />
 				</header>
 				<div class="p-4 space-y-4">
-					<h3 class="h3" data-toc-ignore>{project.title}</h3>
+					<h3 class="h3 text-2xl" data-toc-ignore>{project.title}</h3>
 					<article>
 						<p>
 							<!-- cspell:disable -->
@@ -61,16 +63,26 @@
 								target="_blank"
 								rel="noopener noreferrer"
 								class="inner-button btn variant-glass-primary"
-								>View webpage &nbsp; <i class="fa-solid fa-external-link" /></a
 							>
+								{#if triggerProjectButtonReductions}
+									Website &nbsp; <i class="fa-solid fa-external-link" />
+								{:else}
+									View website &nbsp; <i class="fa-solid fa-external-link" />
+								{/if}
+							</a>
 						{/if}
 						<a
 							href={project.repoUrl}
 							target="_blank"
 							rel="noopener noreferrer"
 							class="inner-button btn variant-glass-primary"
-							>View repository &nbsp; <i class="fa-brands fa-github" /></a
 						>
+							{#if triggerProjectButtonReductions}
+								Repo &nbsp; <i class="fa-brands fa-github" />
+							{:else}
+								View repository &nbsp; <i class="fa-brands fa-github" />
+							{/if}
+						</a>
 					</div>
 				</footer>
 			</div>
@@ -106,5 +118,23 @@
 	}
 	.card {
 		min-height: 300px;
+	}
+
+	@media screen and (max-width: 500px) {
+		/* .inner-project-cards-container {
+            grid-template-columns: 1fr; Posible changes instead of using direct logic over the classes
+            grid-template-columns: repeat(1, minmax(0, 1fr));
+
+        } */
+		.project-card {
+			max-width: 300px;
+			min-width: 300px;
+			min-height: 700px;
+			max-height: 800px;
+		}
+
+		.card {
+			min-height: 350px;
+		}
 	}
 </style>

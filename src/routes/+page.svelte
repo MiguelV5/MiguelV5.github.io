@@ -5,14 +5,21 @@
 	import { onMount, afterUpdate } from 'svelte';
 
 	let titleFontSize = 'text-6xl';
+	let triggerProjectButtonReductions = false;
 
 	const MIN_WINDOW_WIDTH_FOR_TITLE_CHANGE = 768;
+	const MIN_WINDOW_WIDTH_FOR_PROJECT_BUTTONS_REDUCTION = 500;
 
 	const handleResize = () => {
 		if (window.innerWidth <= MIN_WINDOW_WIDTH_FOR_TITLE_CHANGE) {
 			titleFontSize = 'text-4xl';
 		} else {
 			titleFontSize = 'text-6xl';
+		}
+		if (window.innerWidth <= MIN_WINDOW_WIDTH_FOR_PROJECT_BUTTONS_REDUCTION) {
+			triggerProjectButtonReductions = true;
+		} else {
+			triggerProjectButtonReductions = false;
 		}
 	};
 
@@ -34,7 +41,7 @@
 		<BioCard />
 	</div>
 
-	<ProjectCards />
+	<ProjectCards {triggerProjectButtonReductions} />
 </div>
 
 <style>
