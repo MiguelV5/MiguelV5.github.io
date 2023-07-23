@@ -29,7 +29,8 @@
 			description:
 				'A CLI File Transfer application using a custom Reliable Data Transfer protocol on top of UDP, handling errors and packet loss within a simulated network via mininet with a custom topology, written in python for my Computer Networking college subject. We also provide a simple custom wireshark dissector for our RDT protocol made in Lua.',
 			previewImgUrl: BASE_PREVIEW_IMG_URL + 'file_transfer.png',
-			repoUrl: BASE_GH_URL + '7543_IntroSistDistribuidos/tree/main/tp1'
+			repoUrl: BASE_GH_URL + '7543_IntroSistDistribuidos/tree/main/tp1',
+			hasWebpage: false
 		},
 		{
 			title: 'Minimal Shell',
@@ -42,7 +43,7 @@
 		{
 			title: 'Properties pricing + Machine Learning',
 			description:
-				'A data science project consisting of two parts, done with jupyter for my Data Science college subject. The first part consists of the data analysis and model training from 2021`s properties for sale in Buenos Aires, Argentina; given by Properati. It includes full data preprocessing, clustering, classification and regression, training different machine learning models like Decision Trees, KNN and XGBoost. The second part consists of an extension of the first, by adding the usage of a Natural Language Processing model to extract features from the properties descriptions, and using them to improve the previous models. The latest part also adds the training of a Neural Network model for both classification and regression, and Ensemble Models trained from the previous ones.',
+				'A data science project done with jupyter for my Data Science college subject. It consists of the data analysis and model training from a dataset with 2021`s properties for sale in Buenos Aires, Argentina; given by the Properati company. It includes full data preprocessing, clustering, classification and regression, training different machine learning models like Decision Trees, KNN, XGBoost, Neural Networks and Ensemble models.',
 			previewImgUrl: BASE_PREVIEW_IMG_URL + 'ds.png',
 			repoUrl: BASE_GH_URL + '7506-Organizacion_de_datos',
 			hasWebpage: false
