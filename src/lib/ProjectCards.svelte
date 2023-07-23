@@ -54,7 +54,8 @@
 				'A simple REST API for a Human Resources Module for my Software Engineering college subject. It was done using Python, FastAPI, and SQLAlchemy. It includes a simple web interface for the API documentation, and Gherkin tests using Behave for a BDD approach. It uses Render for deployment.',
 			previewImgUrl: BASE_PREVIEW_IMG_URL + 'fastapi.png',
 			repoUrl: BASE_GH_URL + '7509-ModuloRecursos-squad_6',
-			hasWebpage: true,
+
+			hasWebPage: true,
 			pageUrl: 'https://rrhh-squad6-1c2023.onrender.com/docs'
 		}
 	];
