@@ -10,7 +10,7 @@
 		{
 			title: 'Polyrythmic Circles',
 			description:
-				'A relaxing static page with a polyrythmic effect, done simply with vanilla js, html and css.',
+				'A relaxing static page featuring the polyrythmic effect, done simply with vanilla js, html and css.',
 			previewImgUrl: BASE_PREVIEW_IMG_URL + 'polyrythmic_circles.png',
 			repoUrl: BASE_GH_URL + 'polyrythmic_circles',
 			hasWebPage: true,
@@ -18,10 +18,43 @@
 		},
 		{
 			title: 'Ferris Torrent',
-			description: 'A torrent client written in Rust for a college subject.',
+			description:
+				'A two-part project consisting of a bitTorrent client with a GTK-4 GUI supporting multiple concurrent peers for both leeching and seeding, and a custom tracker server with a simple static web interface for basic stats of its peers. Both done in Rust while keeping external crate usage to a minimum (TLS, GTK, logging, json).',
 			previewImgUrl: BASE_PREVIEW_IMG_URL + 'ferris_torrent.png',
-			repoUrl: BASE_GH_URL + 'ferris_torrent',
+			repoUrl: BASE_GH_URL + 'Ferris-Torrent_taller1-fiuba',
 			hasWebpage: false
+		},
+		{
+			title: 'FileTransfer + RDT',
+			description:
+				'A CLI File Transfer application using a custom Reliable Data Transfer protocol on top of UDP, handling errors and packet loss within a simulated network via mininet with a custom topology, written in python for my Computer Networking college subject. We also provide a simple custom wireshark dissector for our RDT protocol made in Lua.',
+			previewImgUrl: BASE_PREVIEW_IMG_URL + 'file_transfer.png',
+			repoUrl: BASE_GH_URL + '7543_IntroSistDistribuidos/tree/main/tp1'
+		},
+		{
+			title: 'Minimal Shell',
+			description:
+				'A minimal shell written in C for my Operating Systems college subject. It supports general commands (using exec), pipes, redirections, and background processes.',
+			previewImgUrl: BASE_PREVIEW_IMG_URL + 'shell.png',
+			repoUrl: BASE_GH_URL + '7508_SisOp_labs/tree/master/lab-shell/shell',
+			hasWebpage: false
+		},
+		{
+			title: 'Properties pricing + Machine Learning',
+			description:
+				'A data science project consisting of two parts, done with jupyter for my Data Science college subject. The first part consists of the data analysis and model training from 2021`s properties for sale in Buenos Aires, Argentina; given by Properati. It includes full data preprocessing, clustering, classification and regression, training different machine learning models like Decision Trees, KNN and XGBoost. The second part consists of an extension of the first, by adding the usage of a Natural Language Processing model to extract features from the properties descriptions, and using them to improve the previous models. The latest part also adds the training of a Neural Network model for both classification and regression, and Ensemble Models trained from the previous ones.',
+			previewImgUrl: BASE_PREVIEW_IMG_URL + 'ds.png',
+			repoUrl: BASE_GH_URL + '7506-Organizacion_de_datos',
+			hasWebpage: false
+		},
+		{
+			title: 'Human Resources REST API',
+			description:
+				'A simple REST API for a Human Resources Module for my Software Engineering college subject. It was done using Python, FastAPI, and SQLAlchemy. It includes a simple web interface for the API documentation, and Gherkin tests using Behave for a BDD approach. It uses Render for deployment.',
+			previewImgUrl: BASE_PREVIEW_IMG_URL + 'fastapi.png',
+			repoUrl: BASE_GH_URL + '7509-ModuloRecursos-squad_6',
+			hasWebpage: true,
+			pageUrl: 'https://rrhh-squad6-1c2023.onrender.com/docs'
 		}
 	];
 
