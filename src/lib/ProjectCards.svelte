@@ -10,7 +10,7 @@
 		{
 			title: 'Polyrythmic Circles',
 			description:
-				'A relaxing static page featuring the polyrythmic effect, done simply with vanilla js, html and css.',
+				'A relaxing static page featuring the polyrythmic effect, done simply with vanilla JS, HTML and CSS.',
 			previewImgUrl: BASE_PREVIEW_IMG_URL + 'polyrythmic_circles.png',
 			repoUrl: BASE_GH_URL + 'polyrythmic_circles',
 			hasWebPage: true,
@@ -19,7 +19,7 @@
 		{
 			title: 'Ferris Torrent',
 			description:
-				'A two-part project consisting of a bitTorrent client with a GTK-4 GUI supporting multiple concurrent peers for both leeching and seeding, and a custom tracker server with a simple static web interface for basic stats of its peers. Both done in Rust while keeping external crate usage to a minimum (TLS, GTK, logging, json).',
+				'A BitTorrent client supporting multiple concurrent peers, and a custom tracker server with a simple static web interface for basic stats of its peers. Both done in Rust while keeping external crate usage to a minimum (TLS, GTK, logging, json) for my Programming Workshop college subject.',
 			previewImgUrl: BASE_PREVIEW_IMG_URL + 'ferris_torrent.png',
 			repoUrl: BASE_GH_URL + 'Ferris-Torrent_taller1-fiuba',
 			hasWebpage: false
@@ -27,7 +27,7 @@
 		{
 			title: 'FileTransfer + RDT',
 			description:
-				'A CLI File Transfer application using a custom Reliable Data Transfer protocol on top of UDP, handling errors and packet loss within a simulated network via mininet with a custom topology, written in python for my Computer Networking college subject. We also provide a simple custom wireshark dissector for our RDT protocol made in Lua.',
+				'A CLI File Transfer app using a custom RDT protocol on top of UDP, handling packet loss within a simulated network via mininet. Written in python for my Computer Networking college subject. A custom wireshark dissector made in Lua is also provided.',
 			previewImgUrl: BASE_PREVIEW_IMG_URL + 'file_transfer.png',
 			repoUrl: BASE_GH_URL + '7543_IntroSistDistribuidos/tree/main/tp1',
 			hasWebpage: false
@@ -35,15 +35,15 @@
 		{
 			title: 'Minimal Shell',
 			description:
-				'A minimal shell written in C for my Operating Systems college subject. It supports general commands (using exec), pipes, redirections, and background processes.',
+				'A minimal shell written in C for my Operating Systems college subject. It supports general commands, pipes, redirections, and background processes.',
 			previewImgUrl: BASE_PREVIEW_IMG_URL + 'shell.png',
 			repoUrl: BASE_GH_URL + '7508_SisOp_labs/tree/master/lab-shell/shell',
 			hasWebpage: false
 		},
 		{
-			title: 'Properties pricing + Machine Learning',
+			title: 'Properties` pricing analysis',
 			description:
-				'A data science project done with jupyter for my Data Science college subject. It consists of the data analysis and model training from a dataset with 2021`s properties for sale in Buenos Aires, Argentina; given by the Properati company. It includes full data preprocessing, clustering, classification and regression, training different machine learning models like Decision Trees, KNN, XGBoost, Neural Networks and Ensemble models.',
+				'A data science project done with jupyter for my Data Science college subject. It consists of the data analysis and model training from a dataset with 2021`s properties for sale in Buenos Aires, Argentina. It includes full data preprocessing, clustering, classification and regression; training multiple ML models.',
 			previewImgUrl: BASE_PREVIEW_IMG_URL + 'ds.png',
 			repoUrl: BASE_GH_URL + '7506-Organizacion_de_datos',
 			hasWebpage: false
@@ -51,7 +51,7 @@
 		{
 			title: 'Human Resources REST API',
 			description:
-				'A simple REST API for a Human Resources Module for my Software Engineering college subject. It was done using Python, FastAPI, and SQLAlchemy. It includes a simple web interface for the API documentation, and Gherkin tests using Behave for a BDD approach. It uses Render for deployment.',
+				'A Backend REST API for a Human Resources Module at a test bussiness for my Software Engineering college subject. It was done using Python and FastAPI. It includes a simple web interface for the API documentation.',
 			previewImgUrl: BASE_PREVIEW_IMG_URL + 'fastapi.png',
 			repoUrl: BASE_GH_URL + '7509-ModuloRecursos-squad_6',
 
@@ -59,36 +59,31 @@
 			pageUrl: 'https://rrhh-squad6-1c2023.onrender.com/docs'
 		}
 	];
-
-	let gridRows = `${projectsList.length}`;
 </script>
 
 <div class="external-project-cards-container space-y-6">
 	<hr class="opacity-100" />
 	<h2 class="h2 font-semibold text-4xl flex justify-center items-center">Projects</h2>
 
-	<div
-		class="inner-project-cards-container w-full text-token grid grid-rows-{gridRows} grid-cols-1 gap-4"
-	>
+	<div class="inner-project-cards-container w-full text-token">
 		{#each projectsList as project, i}
-			<div
-				class="project-card card variant-glass-primary card-hover overflow-hidden"
-				style={`grid-column: 1; grid-row: ${i + 1};`}
-			>
-				<header>
-					<img src={project.previewImgUrl} class="bg-black/50" alt="Post" />
-				</header>
-				<div class="p-4 space-y-4">
-					<h3 class="h3 text-2xl" data-toc-ignore>{project.title}</h3>
-					<article>
-						<p>
-							<!-- cspell:disable -->
-							{project.description}
-							<!-- cspell:enable -->
-						</p>
-					</article>
+			<div class="project-card card variant-glass-primary custom-card-hover overflow-hidden">
+				<div class="main-card-content">
+					<header>
+						<img src={project.previewImgUrl} class="bg-black/50" alt="Post" />
+					</header>
+					<div class="p-4 space-y-4">
+						<h3 class="h3 text-2xl" data-toc-ignore>{project.title}</h3>
+						<article>
+							<p>
+								<!-- cspell:disable -->
+								{project.description}
+								<!-- cspell:enable -->
+							</p>
+						</article>
+					</div>
 				</div>
-				<footer class="p-4 space-x-4">
+				<footer class="inner-card-footer p-4 space-x-4">
 					<hr class="opacity-100" />
 					<br />
 					<div class="inner-card-buttons-container">
@@ -127,18 +122,30 @@
 
 <style>
 	.inner-project-cards-container {
-		display: flex;
-		flex-direction: column;
+		display: grid;
+		grid-template-columns: repeat(1, 1fr);
+		gap: 1.6rem;
 		align-items: center;
 		justify-items: center;
 		width: 100%;
 	}
+
 	.project-card {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
 		width: 100%;
 		height: 100%;
 		max-width: 400px;
 		min-height: 600px;
 		max-height: 700px;
+	}
+
+	.inner-card-footer {
+		display: flex;
+		flex-direction: column;
+		justify-self: flex-end;
+		gap: 0.6rem;
 	}
 	.inner-card-buttons-container {
 		display: flex;
@@ -155,12 +162,18 @@
 		min-height: 300px;
 	}
 
-	@media screen and (max-width: 500px) {
-		/* .inner-project-cards-container {
-            grid-template-columns: 1fr; Posible changes instead of using direct logic over the classes
-            grid-template-columns: repeat(1, minmax(0, 1fr));
+	@media screen and (min-width: 900px) {
+		.inner-project-cards-container {
+			grid-template-columns: repeat(2, 1fr);
+		}
+	}
+	@media screen and (min-width: 1400px) {
+		.inner-project-cards-container {
+			grid-template-columns: repeat(3, 1fr);
+		}
+	}
 
-        } */
+	@media screen and (max-width: 500px) {
 		.project-card {
 			max-width: 300px;
 			min-width: 300px;
@@ -171,5 +184,23 @@
 		.card {
 			min-height: 350px;
 		}
+	}
+
+	.custom-card-hover {
+		transition-property: all;
+		transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+		transition-duration: 150ms;
+	}
+	.custom-card-hover:hover {
+		--tw-scale-x: 104%;
+		--tw-scale-y: 104%;
+		transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate))
+			skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x))
+			scaleY(var(--tw-scale-y));
+		--tw-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+		--tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color),
+			0 8px 10px -6px var(--tw-shadow-color);
+		box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000),
+			var(--tw-shadow);
 	}
 </style>
