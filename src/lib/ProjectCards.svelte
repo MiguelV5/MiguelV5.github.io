@@ -41,7 +41,7 @@
 			hasWebpage: false
 		},
 		{
-			title: 'Properties` pricing analysis',
+			title: 'Properties\' pricing analysis',
 			description:
 				'A data science project done with jupyter for my Data Science college subject. It consists of the data analysis and model training from a dataset with 2021`s properties for sale in Buenos Aires, Argentina. It includes full data preprocessing, clustering, classification and regression; training multiple ML models.',
 			previewImgUrl: BASE_PREVIEW_IMG_URL + 'ds.png',
