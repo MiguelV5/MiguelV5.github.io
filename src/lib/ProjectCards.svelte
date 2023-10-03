@@ -47,16 +47,6 @@
 			previewImgUrl: BASE_PREVIEW_IMG_URL + 'ds.png',
 			repoUrl: BASE_GH_URL + '7506-Organizacion_de_datos',
 			hasWebpage: false
-		},
-		{
-			title: 'Human Resources REST API',
-			description:
-				'A Backend REST API for a Human Resources Module at a test bussiness for my Software Engineering college subject. It was done using Python and FastAPI. It includes a simple web interface for the API documentation.',
-			previewImgUrl: BASE_PREVIEW_IMG_URL + 'fastapi.png',
-			repoUrl: BASE_GH_URL + '7509-ModuloRecursos-squad_6',
-
-			hasWebPage: true,
-			pageUrl: 'https://rrhh-squad6-1c2023.onrender.com/docs'
 		}
 	];
 </script>
