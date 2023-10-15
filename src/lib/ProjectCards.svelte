@@ -33,17 +33,17 @@
 			hasWebpage: false
 		},
 		{
-			title: 'Minimal Shell',
+			title: 'Low level OS Utilities',
 			description:
-				'A minimal shell written in C for my Operating Systems college subject. It supports general commands, pipes, redirections, and background processes.',
+				'Implementation of multiple low level OS utilities in C for my Operating Systems college subject. Includes a shell, a memory allocation library, a process scheduler for the JOS kernel, and a FUSE filesystem.',
 			previewImgUrl: BASE_PREVIEW_IMG_URL + 'shell.png',
-			repoUrl: BASE_GH_URL + '7508_SisOp_labs/tree/master/lab-shell/shell',
+			repoUrl: BASE_GH_URL + '7508_Sistemas_Operativos',
 			hasWebpage: false
 		},
 		{
-			title: 'Properties\' pricing analysis',
+			title: "Properties' pricing analysis",
 			description:
-				'A data science project done with jupyter for my Data Science college subject. It consists of the data analysis and model training from a dataset with 2021\'s properties for sale in Buenos Aires, Argentina. It includes full data preprocessing, clustering, classification and regression; training multiple ML models.',
+				"A data science project done with jupyter for my Data Science college subject. It consists of the data analysis and model training from a dataset with 2021's properties for sale in Buenos Aires, Argentina. It includes full data preprocessing, clustering, classification and regression; training multiple ML models.",
 			previewImgUrl: BASE_PREVIEW_IMG_URL + 'ds.png',
 			repoUrl: BASE_GH_URL + '7506-Organizacion_de_datos',
 			hasWebpage: false
