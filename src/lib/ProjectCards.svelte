@@ -35,7 +35,7 @@
 		{
 			title: 'Low level OS Utilities',
 			description:
-				'Implementation of multiple low level OS utilities in C for my Operating Systems college subject. Includes a shell, a memory allocation library, a process scheduler for the JOS kernel, and a FUSE filesystem.',
+				'Implementation of multiple low level system utilities in C for my Operating Systems college subject. Includes a shell, a memory allocation library, a process scheduler for the JOS kernel, and a FUSE filesystem.',
 			previewImgUrl: BASE_PREVIEW_IMG_URL + 'shell.png',
 			repoUrl: BASE_GH_URL + '7508_Sistemas_Operativos',
 			hasWebpage: false
