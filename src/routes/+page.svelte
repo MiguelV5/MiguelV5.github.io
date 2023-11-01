@@ -31,8 +31,6 @@
 			window.removeEventListener('resize', handleResize);
 		};
 	});
-
-	afterUpdate(handleResize);
 </script>
 
 <div class="page-content-container h-full mx-auto">
