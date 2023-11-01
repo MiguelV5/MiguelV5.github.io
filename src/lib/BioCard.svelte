@@ -1,12 +1,3 @@
-<script>
-	const BASE_PREVIEW_IMG_URL = 'posts/';
-
-	const previewImgsList = [
-		BASE_PREVIEW_IMG_URL + 'polyrythmic_circles.png',
-		BASE_PREVIEW_IMG_URL + 'ferris_torrent.png'
-	];
-</script>
-
 <div class="bio-card-container space-y-6">
 	<img src="art-card-nobg.png" alt="avatar-card" />
 	<div class="inner-credit-msg">
