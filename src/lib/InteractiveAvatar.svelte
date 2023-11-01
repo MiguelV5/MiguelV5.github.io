@@ -58,7 +58,7 @@
 		overflow: hidden;
 	}
 
-	@media screen and (max-width: 1200px) {
+	@media screen and (max-width: 768px) {
 		.avatar {
 			width: 3.3rem;
 			height: 3.3rem;

@@ -103,7 +103,7 @@
 		animation: socials-disabling 0.3s ease-in-out;
 	}
 
-	@media screen and (max-width: 1200px) {
+	@media screen and (max-width: 768px) {
 		.socials {
 			margin-left: 2px;
 			margin-right: 1px;
