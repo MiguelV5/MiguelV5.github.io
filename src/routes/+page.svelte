@@ -22,7 +22,6 @@
 			triggerProjectButtonReductions = false;
 		}
 	};
-	handleResize(); // Mandatory call at startup for mobile browsers
 
 	onMount(() => {
 		window.addEventListener('resize', handleResize);
@@ -31,6 +30,8 @@
 			window.removeEventListener('resize', handleResize);
 		};
 	});
+	handleResize(); // Mandatory call at startup for mobile browsers
+
 </script>
 
 <div class="page-content-container h-full mx-auto">
