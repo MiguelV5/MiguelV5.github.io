@@ -22,6 +22,7 @@
 			triggerProjectButtonReductions = false;
 		}
 	};
+	handleResize(); // Mandatory call at startup for mobile browsers
 
 	onMount(() => {
 		window.addEventListener('resize', handleResize);
