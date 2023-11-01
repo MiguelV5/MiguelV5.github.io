@@ -22,7 +22,7 @@
 				'A BitTorrent client supporting multiple concurrent peers, and a custom tracker server with a simple static web interface for basic stats of its peers. Both done in Rust while keeping external crate usage to a minimum (TLS, GTK, logging, json) for my Programming Workshop college subject.',
 			previewImgUrl: BASE_PREVIEW_IMG_URL + 'ferris_torrent.png',
 			repoUrl: BASE_GH_URL + 'Ferris-Torrent_taller1-fiuba',
-			hasWebpage: false
+			hasWebPage: false
 		},
 		{
 			title: 'FileTransfer + RDT',
@@ -30,7 +30,7 @@
 				'A CLI File Transfer app using a custom RDT protocol on top of UDP, handling packet loss within a simulated network via mininet. Written in python for my Computer Networking college subject. A custom wireshark dissector made in Lua is also provided.',
 			previewImgUrl: BASE_PREVIEW_IMG_URL + 'file_transfer.png',
 			repoUrl: BASE_GH_URL + '7543_IntroSistDistribuidos/tree/main/tp1',
-			hasWebpage: false
+			hasWebPage: false
 		},
 		{
 			title: 'Low level OS Utilities',
@@ -38,7 +38,7 @@
 				'Implementation of multiple low level system utilities in C for my Operating Systems college subject. Includes a shell, a memory allocation library, a process scheduler for the JOS kernel, and a FUSE filesystem.',
 			previewImgUrl: BASE_PREVIEW_IMG_URL + 'shell.png',
 			repoUrl: BASE_GH_URL + '7508_Sistemas_Operativos',
-			hasWebpage: false
+			hasWebPage: false
 		},
 		{
 			title: "Properties' pricing analysis",
@@ -46,13 +46,13 @@
 				"A data science project done with jupyter for my Data Science college subject. It consists of the data analysis and model training from a dataset with 2021's properties for sale in Buenos Aires, Argentina. It includes full data preprocessing, clustering, classification and regression; training multiple ML models.",
 			previewImgUrl: BASE_PREVIEW_IMG_URL + 'ds.png',
 			repoUrl: BASE_GH_URL + '7506-Organizacion_de_datos',
-			hasWebpage: false
+			hasWebPage: false
 		}
 	];
 </script>
 
 <div class="external-project-cards-container space-y-6">
-	<hr class="opacity-100" />
+	<hr />
 	<h2 class="h2 font-semibold text-4xl flex justify-center items-center">Projects</h2>
 
 	<div class="inner-project-cards-container w-full text-token">
@@ -74,7 +74,7 @@
 					</div>
 				</div>
 				<footer class="inner-card-footer p-4 space-x-4">
-					<hr class="opacity-100" />
+					<hr />
 					<br />
 					<div class="inner-card-buttons-container">
 						{#if project.hasWebPage}
@@ -184,8 +184,7 @@
 	.custom-card-hover:hover {
 		--tw-scale-x: 104%;
 		--tw-scale-y: 104%;
-		transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate))
-			skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x))
+		transform: translate(var(--tw-translate-x), var(--tw-translate-y)) scaleX(var(--tw-scale-x))
 			scaleY(var(--tw-scale-y));
 		--tw-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
 		--tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color),
