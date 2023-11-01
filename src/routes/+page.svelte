@@ -7,11 +7,11 @@
 	let titleFontSize = 'text-6xl';
 	let triggerProjectButtonReductions = false;
 
-	const MIN_WINDOW_WIDTH_FOR_TITLE_CHANGE = 768;
+	const MIN_WINDOW_WIDTH_FOR_TITLE_REDUCTION = 768;
 	const MIN_WINDOW_WIDTH_FOR_PROJECT_BUTTONS_REDUCTION = 500;
 
 	const handleResize = () => {
-		if (window.innerWidth <= MIN_WINDOW_WIDTH_FOR_TITLE_CHANGE) {
+		if (window.innerWidth <= MIN_WINDOW_WIDTH_FOR_TITLE_REDUCTION) {
 			titleFontSize = 'text-4xl';
 		} else {
 			titleFontSize = 'text-6xl';
