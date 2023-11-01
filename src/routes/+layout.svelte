@@ -10,10 +10,8 @@
 
 	// ====================================================
 
-	import { AppShell, AppBar } from '@skeletonlabs/skeleton';
 	import InteractiveAvatar from '$lib/InteractiveAvatar.svelte';
 	import { LightSwitch } from '@skeletonlabs/skeleton';
-
 	import Footer from '$lib/Footer.svelte';
 
 	// ====================================================
