@@ -25,12 +25,12 @@
 
 	onMount(() => {
 		window.addEventListener('resize', handleResize);
+		handleResize(); // Mandatory call at startup for mobile browsers
 
 		return () => {
 			window.removeEventListener('resize', handleResize);
 		};
 	});
-	handleResize(); // Mandatory call at startup for mobile browsers
 
 </script>
 
