@@ -4,6 +4,7 @@
 	const BASE_PREVIEW_IMG_URL = 'posts/';
 
 	const BASE_GH_URL = 'https://github.com/MiguelV5/';
+	const BASE_GL_URL = 'https://gitlab.com/MiguelV5/';
 	const BASE_PAGES_URL = 'https://miguelv5.github.io/';
 
 	const projectsList = [
@@ -37,7 +38,7 @@
 			description:
 				'Implementation of multiple low level system utilities in C for my Operating Systems college subject. Includes a shell, a memory allocation library, a process scheduler for the JOS kernel, and a FUSE filesystem.',
 			previewImgUrl: BASE_PREVIEW_IMG_URL + 'shell.png',
-			repoUrl: BASE_GH_URL + '7508_Sistemas_Operativos',
+			repoUrl: BASE_GL_URL + 'sisop',
 			hasWebPage: false
 		},
 		{
@@ -98,9 +99,9 @@
 							class="inner-button btn variant-glass-primary"
 						>
 							{#if triggerProjectButtonReductions}
-								Repo &nbsp; <i class="fa-brands fa-github" />
+								Repo &nbsp; <i class="fa-solid fa-code" />
 							{:else}
-								View repository &nbsp; <i class="fa-brands fa-github" />
+								View repository &nbsp; <i class="fa-solid fa-code" />
 							{/if}
 						</a>
 					</div>
