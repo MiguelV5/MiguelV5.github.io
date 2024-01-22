@@ -45,5 +45,22 @@ const PROJECTS_LIST = [
         previewImgUrl: BASE_PREVIEW_IMG_URL + 'ds.png',
         repoUrl: BASE_GH_URL + '7506-Organizacion_de_datos',
         hasWebPage: false
+    },
+    {
+        title: "Human Resources' Backend API",
+        description:
+            "A basic REST API implementation of a microservice supporting CRUD operations on a Human Resources' local SQLite database, done with Python and FastAPI for my Software Engineering I college subject. It has been deployed on Render cloud platform, and has a simple frontend made with React to interact with all the microservices.",
+        previewImgUrl: BASE_PREVIEW_IMG_URL + 'hr.png',
+        repoUrl: BASE_GH_URL + "7509-ModuloRecursos-squad_6",
+        hasWebPage: true,
+        pageUrl: "https://rrhh-squad6-1c2023.onrender.com/docs"
+    },
+    {
+        title: "Sport Events' Backend API",
+        description:
+            "A REST API for a sport events' management app, done with Java and Spring Boot for my Software Engineering II college subject. It uses JPA/Hibernate as ORM for a PostgreSQL database, and has JWT auth and role-based access control to be used by two frontends: a backoffice for administrators, and a web app for event attendees. It also had a CI/CD pipeline on GitLab, and was deployed on a server given by our college professors.",
+        previewImgUrl: BASE_PREVIEW_IMG_URL + 'sport_events.png',
+        repoUrl: BASE_GH_URL + '7510_TDDSportsApp_API',
+        hasWebPage: false
     }
 ];
