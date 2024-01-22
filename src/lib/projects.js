@@ -4,7 +4,7 @@ const BASE_GH_URL = 'https://github.com/MiguelV5/';
 const BASE_GL_URL = 'https://gitlab.com/MiguelV5/';
 const BASE_PAGES_URL = 'https://miguelv5.github.io/';
 
-const PROJECTS_LIST = [
+export const PROJECTS_LIST = [
     {
         title: 'Polyrythmic Circles',
         description:
