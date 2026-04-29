@@ -3,7 +3,7 @@
 
 	const GH_URL = 'https://github.com/MiguelV5';
 	const LINKEDIN_URL = 'https://www.linkedin.com/in/miguel-v5/';
-	const MAILTO_URL = 'mailto:miguel.v5th@gmail.com';
+	const MAILTO_URL = 'mailto:miguelvj.dev@gmail.com';
 </script>
 
 <a
