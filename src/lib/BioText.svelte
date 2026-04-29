@@ -9,20 +9,19 @@
 			<span class="magic-text">Miguel Vasquez</span>.
 		</h1>
 		<h3 class="h3">
-			I am currently a studying at my <a
+			I am a soon-to-be graduate at my <a
 				class="magic-text"
 				href="https://fi.uba.ar"
 				target="_blank"
 				rel="noopener noreferrer">alma mater 🖤</a
-			>, actively pursuing my passion for Computer Science. <!-- Self-portray for the near future (almost there :p) ----- I am a proud graduate from my <a
+			>, actively pursuing my passion for Computer Science. <!-- almost there :) ----- I am a graduate at my <a
                 class="magic-text"
                 href="https://fi.uba.ar"
                 target="_blank"
                 rel="noopener noreferrer">alma mater 🖤</a
             >, where I completed my studies in Computer Science. -->
 			<br />
-			I possess a deep affection for this fascinating field in its entirety, thus I acquire great satisfaction
-			by constantly learning on it, and find great joy in imparting my knowledge to others.
+			I possess a deep affection for this fascinating field in its entirety; hence, I find great joy in constantly learning and sharing its knowledge. This page showcases some of my most significant projects, all developed throughout my studies and personal endeavors. May you find them interesting! I wish you a great day wherever you are.
 		</h3>
 	</div>
 </div>
@@ -41,9 +40,9 @@
 		margin-bottom: 30px;
 	}
 
-	@media screen and (max-width: 1200px) {
+	@media screen and (max-width: 1400px) {
 		.bio-container {
-			width: 100%;
+			width: 85%;
 			align-items: center;
 		}
 	}

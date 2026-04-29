@@ -24,10 +24,10 @@
 		</div>
 		<div class="app-bar-trail">
 			<LightSwitch
-				bgLight="bg-surface-200"
+				bgLight="bg-surface-300"
 				height="h-7"
 				width="w-14"
-				ring="ring-[2px] ring-surface-300/20"
+				ring="ring-[2px] ring-surface-200/20"
 			/>
 		</div>
 	</header>
@@ -59,7 +59,7 @@
 		top: 0;
 		width: 100%;
 		height: 80px;
-		padding: 0 10px;
+		padding: 10px 22px;
 		z-index: 100;
 	}
 
@@ -68,7 +68,6 @@
 		flex-direction: row;
 		justify-content: flex-start;
 		align-items: center;
-		margin-left: 10px;
 		width: 100%;
 		height: 100%;
 	}
@@ -93,7 +92,7 @@
 		padding-right: 10px;
 	}
 
-	@media screen and (max-width: 1200px) {
+	@media screen and (max-width: 1400px) {
 		.page-content {
 			margin-top: 20px;
 			padding-top: 120px;

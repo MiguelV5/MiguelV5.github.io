@@ -48,7 +48,7 @@
 		transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
 	}
 
-	@media screen and (max-width: 1200px) {
+	@media screen and (max-width: 1400px) {
 		.bio-card-container {
 			margin-left: auto;
 			margin-right: auto;

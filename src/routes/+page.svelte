@@ -7,7 +7,7 @@
 	let titleFontSize = 'text-6xl';
 	let triggerProjectButtonReductions = false;
 
-	const MIN_WINDOW_WIDTH_FOR_TITLE_REDUCTION = 768;
+	const MIN_WINDOW_WIDTH_FOR_TITLE_REDUCTION = 900;
 	const MIN_WINDOW_WIDTH_FOR_PROJECT_BUTTONS_REDUCTION = 500;
 
 	const handleResize = () => {
@@ -45,7 +45,7 @@
 
 <style>
 	.page-content-container {
-		max-width: 1200px;
+		max-width: 1400px;
 		max-height: max-content;
 		margin: 0 auto;
 		display: flex;
@@ -54,7 +54,7 @@
 	}
 
 	.flexible-pseudo-row-container {
-		max-width: 1200px;
+		max-width: 1400px;
 		margin: 0 auto;
 		display: flex;
 		flex-direction: row;
@@ -63,7 +63,7 @@
 		margin-bottom: 60px;
 	}
 
-	@media screen and (max-width: 1200px) {
+	@media screen and (max-width: 1400px) {
 		.flexible-pseudo-row-container {
 			flex-direction: column;
 			margin-bottom: 0px;

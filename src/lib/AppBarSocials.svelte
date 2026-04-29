@@ -3,7 +3,6 @@
 
 	const GH_URL = 'https://github.com/MiguelV5';
 	const LINKEDIN_URL = 'https://www.linkedin.com/in/miguel-v5/';
-	const SPOTIFY_URL = 'https://open.spotify.com/user/vasquezjimenezmiguelangel';
 	const MAILTO_URL = 'mailto:miguel.v5th@gmail.com';
 </script>
 
@@ -11,7 +10,7 @@
 	href={GH_URL}
 	target="_blank"
 	rel="noopener noreferrer"
-	class="btn-icon flexible-button-icon variant-glass-surface socials {socials_class}"
+	class="btn btn-icon flexible-button-icon variant-glass-surface socials {socials_class}"
 >
 	<i class="fa-brands fa-github" />
 </a>
@@ -19,23 +18,15 @@
 	href={LINKEDIN_URL}
 	target="_blank"
 	rel="noopener noreferrer"
-	class="btn-icon flexible-button-icon variant-glass-surface socials {socials_class}"
+	class="btn btn-icon flexible-button-icon variant-glass-surface socials {socials_class}"
 >
 	<i class="fa-brands fa-linkedin" />
-</a>
-<a
-	href={SPOTIFY_URL}
-	target="_blank"
-	rel="noopener noreferrer"
-	class="btn-icon flexible-button-icon variant-glass-surface socials {socials_class}"
->
-	<i class="fa-brands fa-spotify" />
 </a>
 <a
 	href={MAILTO_URL}
 	target="_blank"
 	rel="noopener noreferrer"
-	class="btn-icon flexible-button-icon variant-glass-surface socials {socials_class}"
+	class="btn btn-icon flexible-button-icon variant-glass-surface socials {socials_class}"
 >
 	<i class="fa-solid fa-envelope" />
 </a>
@@ -58,26 +49,26 @@
 
 	.socials-enabled {
 		opacity: 1;
-		transform: translateX(10px);
-		transition: transform 0.3s ease-in-out;
+		transform: translateX(13px);
+		transition: transform 0.2s ease-in-out;
 	}
 
 	.socials-disabled {
 		opacity: 0;
-		transform: translateX(-10px);
-		transition: transform 0.3s ease-in-out;
+		transform: translateX(-13px);
+		transition: transform 0.2s ease-in-out;
 		pointer-events: none;
 	}
 
 	@keyframes socials-enabling {
 		from {
 			opacity: 0;
-			transform: translateX(-10px);
+			transform: translateX(-13px);
 			visibility: hidden;
 		}
 		to {
 			opacity: 1;
-			transform: translateX(10px);
+			transform: translateX(13px);
 			visibility: visible;
 		}
 	}
@@ -85,25 +76,25 @@
 	@keyframes socials-disabling {
 		from {
 			opacity: 1;
-			transform: translateX(10px);
+			transform: translateX(13px);
 			visibility: visible;
 		}
 		to {
 			opacity: 0;
-			transform: translateX(-10px);
+			transform: translateX(-13px);
 			visibility: hidden;
 		}
 	}
 
 	.socials-enabled {
-		animation: socials-enabling 0.3s ease-in-out;
+		animation: socials-enabling 0.2s ease-in-out;
 	}
 
 	.socials-disabled {
-		animation: socials-disabling 0.3s ease-in-out;
+		animation: socials-disabling 0.2s ease-in-out;
 	}
 
-	@media screen and (max-width: 768px) {
+	@media screen and (max-width: 900px) {
 		.socials {
 			margin-left: 2px;
 			margin-right: 1px;

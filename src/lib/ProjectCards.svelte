@@ -10,7 +10,7 @@
 
 	<div class="inner-project-cards-container w-full text-token">
 		{#each PROJECTS_LIST as project, i}
-			<div class="project-card card variant-glass-primary custom-card-hover overflow-hidden">
+			<div class="project-card card variant-glass-surface custom-card-hover overflow-hidden">
 				<div class="main-card-content">
 					<header>
 						<img src={project.previewImgUrl} class="bg-black/50" alt="Post" />
@@ -28,14 +28,14 @@
 				</div>
 				<footer class="inner-card-footer p-4 space-x-4">
 					<hr />
-					<br />
+					<!-- <br /> -->
 					<div class="inner-card-buttons-container">
 						{#if project.hasWebPage}
 							<a
 								href={project.pageUrl}
 								target="_blank"
 								rel="noopener noreferrer"
-								class="inner-button btn variant-glass-primary"
+								class="inner-button btn variant-glass-secondary"
 							>
 								{#if triggerProjectButtonReductions}
 									Website &nbsp; <i class="fa-solid fa-external-link" />
@@ -48,7 +48,7 @@
 							href={project.repoUrl}
 							target="_blank"
 							rel="noopener noreferrer"
-							class="inner-button btn variant-glass-primary"
+							class="inner-button btn variant-glass-secondary"
 						>
 							{#if triggerProjectButtonReductions}
 								Repo &nbsp; <i class="fa-solid fa-code" />
