@@ -24,9 +24,9 @@ export const PROJECTS_LIST = [
         pageUrl: "https://myrpl.ar/"
     },
     {
-        title: "Amazon reviews' mass analysis via distributed computing",
+        title: "Amazon reviews' data analysis via distributed computing",
         description:
-            "A distributed system for processing and analyzing large datasets of Amazon books reviews in parallel, built with a fleet of dockerized Python controllers and RabbitMQ as a message broker. It implements a MapReduce-like architecture, where a master node distributes the workload among multiple worker nodes categorized by responsibilities. The system is designed to be scalable and fault-tolerant, with the ability to handle highly unstable networks/environments by properly managing catastrophic failures without losing data (even in scenarios with write-corruption) or interrupting the general processing.",
+            "A distributed system for processing and analyzing large datasets of Amazon books reviews in parallel, built with a fleet of dockerized Python controllers and RabbitMQ as a message broker. It implements an architecture akin to MapReduce, as main nodes distribute the workload among multiple workers and replicas categorized by responsibilities. The system is designed to be scalable and fault-tolerant, with the ability to manage highly unstable networks/environments by properly handling catastrophic failures without losing neither data integrity nor throughput consistency.",
         previewImgUrl: BASE_PREVIEW_IMG_URL + 'distri.png',
         repoUrl: BASE_GH_URL + 'Sistemas_Distribuidos',
         hasWebPage: false
