@@ -9,17 +9,12 @@
 			<span class="magic-text">Miguel Vasquez</span>.
 		</h1>
 		<h3 class="h3">
-			I am a soon-to-be graduate at my <a
-				class="magic-text"
-				href="https://fi.uba.ar"
-				target="_blank"
-				rel="noopener noreferrer">alma mater 🖤</a
-			>, actively pursuing my passion for Computer Science. <!-- almost there :) ----- I am a graduate at my <a
+			I am a graduate of my <a
                 class="magic-text"
                 href="https://fi.uba.ar"
                 target="_blank"
                 rel="noopener noreferrer">alma mater 🖤</a
-            >, where I completed my studies in Computer Science. -->
+            >, where I completed my studies in Computer Science and Engineering.
 			<br />
 			I possess a deep affection for this fascinating field in its entirety; hence, I find great joy in constantly learning and sharing its knowledge. This page showcases some of my most significant projects, all developed throughout my studies and personal endeavors. May you find them interesting! I wish you a great day wherever you are.
 		</h3>

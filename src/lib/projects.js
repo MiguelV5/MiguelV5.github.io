@@ -5,26 +5,17 @@ const BASE_GL_URL = 'https://gitlab.com/MiguelV5/';
 const BASE_PAGES_URL = 'https://miguelv5.github.io/';
 
 export const PROJECTS_LIST = [
-    // {
-    //     title: 'Polyrythmic Circles',
-    //     description:
-    //         'A simple, relaxing static page featuring the polyrythmic effect, done with vanilla JS, HTML and CSS.',
-    //     previewImgUrl: BASE_PREVIEW_IMG_URL + 'polyrythmic_circles.png',
-    //     repoUrl: BASE_GH_URL + 'polyrythmic_circles',
-    //     hasWebPage: true,
-    //     pageUrl: BASE_PAGES_URL + 'polyrythmic_circles'
-    // },
     {
         title: "RPL 3.0 | Senior Engineering Thesis",
         description:
-            "Maintained and overhauled an open-source platform serving 5k+ active users and ~400k code-execution submissions per four-month period. Built a sandboxed runner for asynchronous multi-language execution (C, Python, Rust, etc.). Led zero-downtime data migration through multiple MySQL major updates alongside database-per-service schema separation, all whilst preserving legacy records. The system leverages automated GCP (GKE) infrastructure with Terraform and Kubernetes via CI/CD pipelines, including autoscaling and secure inter-service auth (mTLS), as well as a full-stack entrypoint.",
+            "Maintained and overhauled an open-source platform serving 5k+ active users and ~400k code-execution submissions per quarter. Built a sandboxed runner for asynchronous multi-language execution (C, Python, Rust, Go). Led zero-downtime data migration through multiple MySQL major updates alongside database-per-service schema separation, all whilst preserving legacy records. The system leverages automated GCP (GKE) infrastructure with Terraform and Kubernetes via CI/CD pipelines, including autoscaling and secure inter-service auth (mTLS), as well as a full-stack entrypoint.",
         previewImgUrl: BASE_PREVIEW_IMG_URL + 'rpl.png',
         repoUrl: "https://github.com/reinvent-fiuba/RPL-3.0",
         hasWebPage: true,
         pageUrl: "https://myrpl.ar/"
     },
     {
-        title: "Amazon reviews' data analysis via distributed computing",
+        title: "Amazon reviews' data processing via distributed computing",
         description:
             "A distributed system for processing and analyzing large datasets of Amazon books reviews in parallel, built with a fleet of dockerized Python controllers and RabbitMQ as a message broker. It implements an architecture akin to MapReduce, as main nodes distribute the workload among multiple workers and replicas categorized by responsibilities. The system is designed to be scalable and fault-tolerant, with the ability to manage highly unstable networks/environments by properly handling catastrophic failures without losing neither data integrity nor throughput consistency.",
         previewImgUrl: BASE_PREVIEW_IMG_URL + 'distri.png',
@@ -42,7 +33,7 @@ export const PROJECTS_LIST = [
     {
         title: 'FileTransfer + RDT',
         description:
-            'A CLI File Transfer app implementing a custom RDT protocol on top of UDP, handling packet loss within a simulated network via mininet. Written in python for my Computer Networking college subject. A custom wireshark dissector made in Lua is also provided.',
+            'A CLI File Transfer app implementing a custom RDT protocol on top of UDP, able to handle packet loss. Written in Python and used to analyze custom protocol behavior within a simulated network via Mininet. A custom Wireshark dissector made in Lua is also provided.',
         previewImgUrl: BASE_PREVIEW_IMG_URL + 'file_transfer.png',
         repoUrl: BASE_GH_URL + '7543_IntroSistDistribuidos/tree/main/tp1',
         hasWebPage: false
@@ -50,7 +41,7 @@ export const PROJECTS_LIST = [
     {
         title: 'Low level OS Utilities',
         description:
-            'Implementation of multiple low level system utilities in C for my Operating Systems college subject. Includes a shell, a memory allocation library, a process scheduler for the JOS kernel, and a FUSE filesystem.',
+            'Implementation of multiple low-level system utilities in C developed at the University of Buenos Aires. Includes a custom shell, a memory allocation library, a process scheduler for the JOS kernel, and a FUSE filesystem.',
         previewImgUrl: BASE_PREVIEW_IMG_URL + 'shell.png',
         repoUrl: BASE_GL_URL + 'sisop',
         hasWebPage: false
@@ -58,26 +49,18 @@ export const PROJECTS_LIST = [
     {
         title: "Properties' pricing analysis",
         description:
-            "A data science project consisting of analysis and model training from a dataset with 2021's properties for sale in Buenos Aires, Argentina. It includes full data preprocessing, clustering, classification and regression models, presenting the results and insights obtained from the record exploration and model evaluation with visualizations and metrics.",
+            "A data science project consisting of analysis and model training from a dataset of properties for sale in Buenos Aires, Argentina. It includes full data preprocessing, clustering, classification and regression models, presenting the results and insights obtained from the record exploration and model evaluation with visualizations and metrics.",
         previewImgUrl: BASE_PREVIEW_IMG_URL + 'ds.png',
         repoUrl: BASE_GH_URL + '7506-Organizacion_de_datos',
         hasWebPage: false
     },
-    // {
-    //     title: "Human Resources' Backend API",
-    //     description:
-    //         "A basic REST API implementation of a microservice supporting CRUD operations on a Human Resources' local SQLite database, done with Python and FastAPI for my Software Engineering I college subject. It has been deployed on Render cloud platform, and has a simple frontend made with React to interact with all the microservices.",
-    //     previewImgUrl: BASE_PREVIEW_IMG_URL + 'hr.png',
-    //     repoUrl: BASE_GH_URL + "7509-ModuloRecursos-squad_6",
-    //     hasWebPage: true,
-    //     pageUrl: "https://rrhh-squad6-1c2023.onrender.com/docs"
-    // },
-    // {
-    //     title: "Sport Events' Backend API",
-    //     description:
-    //         "A REST API for a sport events' management app, done with Java and Spring Boot for my Software Engineering II college subject. It uses JPA/Hibernate as ORM for a PostgreSQL database, and has JWT auth and role-based access control to be used by two frontends: a backoffice for administrators, and a web app for event attendees. It also had a CI/CD pipeline on GitLab, and was deployed on a server given by our college professors.",
-    //     previewImgUrl: BASE_PREVIEW_IMG_URL + 'sport_events.png',
-    //     repoUrl: BASE_GH_URL + '7510_TDDSportsApp_API',
-    //     hasWebPage: false
-    // }
+    {
+        title: 'Polyrythmic Circles',
+        description:
+            'A minimalist, interactive audio-visual web experiment exploring the polyrhythmic effect. Built with vanilla JavaScript, HTML, and CSS to focus on smooth mathematical canvas rendering, for a simple yet relaxing experience.',
+        previewImgUrl: BASE_PREVIEW_IMG_URL + 'polyrythmic_circles.png',
+        repoUrl: BASE_GH_URL + 'polyrythmic_circles',
+        hasWebPage: true,
+        pageUrl: BASE_PAGES_URL + 'polyrythmic_circles'
+    },
 ];
