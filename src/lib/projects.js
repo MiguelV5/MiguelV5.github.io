@@ -54,13 +54,13 @@ export const PROJECTS_LIST = [
         repoUrl: BASE_GH_URL + '7506-Organizacion_de_datos',
         hasWebPage: false
     },
-    {
-        title: 'Polyrythmic Circles',
-        description:
-            'A minimalist, interactive audio-visual web experiment exploring the polyrhythmic effect. Built with vanilla JavaScript, HTML, and CSS to focus on smooth mathematical canvas rendering, for a simple yet relaxing experience.',
-        previewImgUrl: BASE_PREVIEW_IMG_URL + 'polyrythmic_circles.png',
-        repoUrl: BASE_GH_URL + 'polyrythmic_circles',
-        hasWebPage: true,
-        pageUrl: BASE_PAGES_URL + 'polyrythmic_circles'
-    },
+    // {
+    //     title: 'Polyrythmic Circles',
+    //     description:
+    //         'A minimalist, interactive audio-visual web experiment exploring the polyrhythmic effect. Built with vanilla JavaScript, HTML, and CSS to focus on smooth mathematical canvas rendering, for a simple yet relaxing experience.',
+    //     previewImgUrl: BASE_PREVIEW_IMG_URL + 'polyrythmic_circles.png',
+    //     repoUrl: BASE_GH_URL + 'polyrythmic_circles',
+    //     hasWebPage: true,
+    //     pageUrl: BASE_PAGES_URL + 'polyrythmic_circles'
+    // },
 ];
