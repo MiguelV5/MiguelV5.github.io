@@ -15,19 +15,19 @@ export const PROJECTS_LIST = [
         pageUrl: "https://myrpl.ar/"
     },
     {
+        title: 'Ferris Torrent',
+        description:
+        'A BitTorrent client supporting multiple concurrent peers, and a custom tracker server with a simple static web interface for basic stats of its peers. Both implemented in Rust while keeping external crate usage to a strict minimum (TLS, GTK, logging, json) in order to properly handle real-world network conditions and adhere to documented protocol specifications without relying on third-party implementations.',
+        previewImgUrl: BASE_PREVIEW_IMG_URL + 'ferris_torrent.png',
+        repoUrl: BASE_GH_URL + 'Ferris-Torrent_taller1-fiuba',
+        hasWebPage: false
+    },
+    {
         title: "Amazon reviews' data analysis via distributed computing",
         description:
             "A distributed system for processing and analyzing large datasets of Amazon books reviews in parallel, built with a fleet of dockerized Python controllers and RabbitMQ as a message broker. It implements an architecture akin to MapReduce, as main nodes distribute the workload among multiple workers and replicas categorized by responsibilities. The system is designed to be scalable and fault-tolerant, with the ability to manage highly unstable networks/environments by properly handling catastrophic failures without losing neither data integrity nor throughput consistency.",
         previewImgUrl: BASE_PREVIEW_IMG_URL + 'distri.png',
         repoUrl: BASE_GH_URL + 'Sistemas_Distribuidos',
-        hasWebPage: false
-    },
-    {
-        title: 'Ferris Torrent',
-        description:
-            'A BitTorrent client supporting multiple concurrent peers, and a custom tracker server with a simple static web interface for basic stats of its peers. Both implemented in Rust while keeping external crate usage to a strict minimum (TLS, GTK, logging, json) in order to properly handle real-world network conditions and adhere to documented protocol specifications without relying on third-party implementations.',
-        previewImgUrl: BASE_PREVIEW_IMG_URL + 'ferris_torrent.png',
-        repoUrl: BASE_GH_URL + 'Ferris-Torrent_taller1-fiuba',
         hasWebPage: false
     },
     {
